@@ -1,0 +1,52 @@
+{
+  "name": "MenardEase",
+  "version": "0.0.1",
+  "description": "An easing tool to get the 2 anchor points values into clipboard",
+  "main": "main.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp dist && cd dist/ && electron .",
+    "build:app" : "gulp dist && electron-packager ./dist/ --overwrite=true --out=builds"
+  },
+  "repository": "https://github.com/antoninlanglade/menardease",
+  "keywords": [
+    "Electron",
+    "Ease",
+    "Cubic Bezier",
+    "Curves"
+  ],
+  "author": "GitHub",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.4.0",
+    "electron": "~1.6.2",
+    "electron-packager": "^8.7.1",
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-compat": "^1.0.3",
+    "eslint-plugin-import": "^2.3.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-eslint": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-stylelint": "^3.9.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^1.2.2",
+    "stylelint": "^7.11.0",
+    "stylelint-order": "^0.5.0",
+    "stylelint-scss": "^1.4.4",
+    "through2": "^2.0.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "bezier-easing": "^2.0.3",
+    "gsap": "^1.19.1",
+    "raf": "github:pqml/raf"
+  }
+}
